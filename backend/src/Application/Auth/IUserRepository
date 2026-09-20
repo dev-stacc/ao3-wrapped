@@ -1,0 +1,6 @@
+public interface IUserRepository
+{
+  Task<User?> FindByEmailAsync(string email, CancellationToken ct = default);
+  Task<bool> EmailExistsAsync(string email, cacellationToken ct = default);
+  Task AddAsync(User user, CancellationToken ct = default);
+}

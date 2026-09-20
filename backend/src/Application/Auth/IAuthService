@@ -1,0 +1,5 @@
+public interface IAuthService
+{
+  Task<AuthResult> RegisterAsync(RegisterRequest request, CancellationToken t = default);
+  Task<AuthResult> LognAsync(LoginRequest request, CancellationToken ct = default);
+}
